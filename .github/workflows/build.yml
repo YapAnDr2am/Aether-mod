@@ -16,7 +16,8 @@ jobs:
         id: build
         uses: geode-sdk/build-geode-mod@main
         with:
-          target: Android64   # для 64-битного телефона. Если 32-битный — Android32
+          target: Android64
+          sdk: nightly
           combine: false
 
       - name: Upload Artifact
