@@ -1,0 +1,19 @@
+{
+    "geode": "3.0.0",
+    "gd": {
+        "win": "2.2081",
+        "android": "2.2081"
+    },
+    "id": "com.yourname.aether",
+    "name": "Aether",
+    "version": "v1.0.0",
+    "developer": "YapIk",
+    "description": "Adaptive AI trainer for Geometry Dash. Analyzes deaths and provides real-time tips.",
+    "dependencies": [
+        {
+            "id": "alphalaneous.level-storage-api",
+            "version": ">=1.0.5",
+            "importance": "required"
+        }
+    ]
+}
