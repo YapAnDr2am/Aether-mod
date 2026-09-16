@@ -1,4 +1,4 @@
-name: Build Geode Mod for Android
+name: Build Geode Mod
 
 on:
   push:
@@ -9,19 +9,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Build Android Mod
+      - uses: geode-sdk/build-geode-mod@v1
         id: build
-        uses: geode-sdk/build-geode-mod@main
         with:
           target: Android64
-          sdk: nightly
-          combine: false
 
-      - name: Upload Artifact
-        uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v4
         with:
           name: Aether-Android
           path: ${{ steps.build.outputs.build-output }}
