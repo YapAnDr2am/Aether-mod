@@ -17,7 +17,7 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         with:
           target: Android64
-          sdk: nightly
+          sdk: v3.0.0
           combine: false
 
       - name: Upload Artifact
