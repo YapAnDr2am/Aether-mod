@@ -7,7 +7,7 @@
     "id": "com.yourname.aether",
     "name": "Aether",
     "version": "v1.0.0",
-    "developer": "YapIk",
+    "developer": "YapAnDr2am",
     "description": "Adaptive AI trainer for Geometry Dash. Analyzes deaths and provides real-time tips.",
     "dependencies": [
         {
